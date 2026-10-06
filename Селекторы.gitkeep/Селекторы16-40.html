@@ -1,0 +1,469 @@
+
+<!--№16-->
+
+#elem1 {
+	color: red;
+}
+#elem2 {
+	color: green;
+}
+#elem3 {
+	color: blue;
+}
+
+<!--№17-->
+
+#block {
+	background-color: #0CA5DF;   
+	border: 2px solid black;
+	padding: 10px;
+}
+.text {
+	font-size: 18px;
+	line-height: 1.5;
+	color: blue;
+}
+
+<!--№18-->
+
+#elem h2 {
+	color: red;
+}
+
+#elem .text {
+	color: red;
+}
+
+#elem p.text {
+	color: red;
+}
+
+#elem li.text {
+	color: red;
+}
+
+<!--№19-->
+
+.eee.zzz.ccc {
+	color: red;
+}
+
+<!--№20-->
+
+Что выбирает: элемент, у которого одновременно есть классы bbb и zzz
+<p class="bbb zzz">text</p>
+
+Что выбирает: <h2>, у которого одновременно есть классы bbb и zzz.
+<h2 class="bbb zzz">Title</h2>
+
+Что выбирает: элемент с id="elem", у которого есть класс bbb.
+<div id="elem" class="bbb">text</div>
+
+Что выбирает: элемент с id="elem", у которого одновременно есть классы bbb и zzz.
+<div id="elem" class="bbb zzz">text</div>
+
+Что выбирает: <h2> с id="elem", у которого есть класс bbb.
+<h2 id="elem" class="bbb">Title</h2>
+
+
+<!--№21-->
+
+Что выбирает: <h2> с классом zzz. Всё слитно → всё на одном элементе.
+<h2 class="zzz">Title</h2>
+
+Что выбирает: элемент с классом zzz внутри <h2>. Пробел → потомок.
+<h2>
+	<span class="zzz">text</span>
+</h2>
+
+Что выбирает: элемент с классами bbb и zzz одновременно.
+<p class="bbb zzz">text</p>
+
+Что выбирает: .zzz внутри .bbb.
+<div class="bbb">
+	<p class="zzz">text</p>
+</div>
+
+Что выбирает: элемент с тремя классами сразу: bbb, zzz, xxx.
+<p class="bbb zzz xxx">text</p>
+
+Что выбирает: элемент с классами zzz и xxx (одновременно на одном элементе), который находится внутри .bbb.
+<div class="bbb">
+	<p class="zzz xxx">text</p>
+</div>
+
+Что выбирает: .xxx внутри элемента, у которого одновременно классы bbb и zzz.
+<div class="bbb zzz">
+	<p class="xxx">text</p>
+</div>
+
+Что выбирает: .xxx внутри .zzz, который внутри .bbb
+<div class="bbb">
+	<div class="zzz">
+		<p class="xxx">text</p>
+	</div>
+</div>
+
+Что выбирает: элемент с id elem, у которого есть класс bbb.
+<div id="elem" class="bbb">text</div>
+
+Что выбирает: .bbb внутри #elem.
+<div id="elem">
+	<p class="bbb">text</p>
+</div>
+
+<!--№22-->
+
+#block h1, #block h2 {
+	text-align: center;
+}
+#block h1, #block h2 {
+	text-align: center;
+}
+#block h1 {
+	font-size: 30px;
+}
+#block h2 {
+	font-size: 20px;
+}
+
+<!--№23-->
+
+#block h1, #block h2, #block h3 {
+	text-align: center;
+}
+#block h2 {
+	color: blue;
+}
+#block h3 {
+	font-size: 16px;
+	color: red;
+}
+#block h1.eee, #block h2.zzz {
+	text-align: center;
+}
+#block h1.eee {
+	font-size: 30px;
+}
+#block h2.zzz {
+	font-size: 20px;
+}
+.xxx .kkk, .eee h2.zzz, #eee h2 {
+	text-align: center;
+}
+.eee h2.zzz, .xxx {
+	text-align: center;
+}
+
+<!--№24-->
+
+div p {
+	color: red;
+}
+
+div h2 {
+	color: red;
+}
+
+#block p {
+	color: red;
+}
+
+#block h2 {
+	color: red;
+}
+
+.bbb {
+	color: red;
+}
+
+#block .bbb {
+	color: red;
+}
+
+p.bbb {
+	color: red;
+}
+
+h2.bbb {
+	color: red;
+}
+
+#block p.bbb {
+	color: red;
+}
+
+.bbb, .xxx {
+	color: red;
+}
+
+p.bbb, h2.xxx {
+	color: red;
+}
+
+#block p.bbb, #block p.xxx {
+	color: red;
+}
+
+.fff {
+	color: red;
+}
+
+.fff p {
+	color: red;
+}
+
+p.fff {
+	color: red;
+}
+
+.fff .bbb {
+	color: red;
+}
+
+.fff h2.bbb {
+	color: red;
+}
+<!--№25-->
+
+Заголовки будут размером 30px.
+
+<!--№26-->
+
+К заголовку <h2> применятся три свойства: font-size font-style color
+
+<!--№27-->
+#elem + li {
+	color: red;
+}
+
+.elem + li {
+	color: red;
+}
+
+<!--№28-->
+
+#elem ~ li {
+	color: red;
+}
+
+<!--№29-->
+
+main * p {
+	color: red;
+}
+
+<!--№30-->
+[title] {
+	color: red;
+}
+
+p[title] {
+	color: red;
+}
+
+p[title="hello"] {
+	color: red;
+}
+
+a[href^="http://"] {
+	color: red;
+}
+
+a[href$=".html"] {
+	color: red;
+}
+
+p[title*="hello"] {
+	color: red;
+}
+
+p[class^="top-"] {
+	color: red;
+}
+
+<!--№31-->
+
+a:hover {
+	color: red;
+	text-decoration: none;
+}
+a:link {
+	color: blue;
+}
+a:visited {
+	color: green;
+}
+a:active {
+	color: black;
+}
+
+<!--№32-->
+
+a {
+	color: skyblue;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+<!--№33-->
+
+#test a
+Выбирает: все ссылки <a>, находящиеся внутри элемента с id="test"
+
+#test a:hover
+Выбирает: те же ссылки внутри #test, но только в момент наведения на них курсора (:hover).
+
+<div id="test">
+	<p>
+		<a href="#">ссылка 1</a>
+	</p>
+	<p>
+		<a href="#">ссылка 2</a>
+	</p>
+</div>
+
+<p>
+	<a href="#">ссылка вне #test — НЕ покрасится</a>
+</p>
+
+<!--№34-->
+
+Что выбирает
+a.zzz — все ссылки <a> с классом zzz.
+
+a.zzz:hover — те же ссылки при наведении.
+
+<a href="#" class="zzz">ссылка с классом zzz</a>
+<a href="#">обычная ссылка — НЕ подходит</a>
+
+Что выбирает
+#block a.zzz — ссылки <a> с классом zzz, находящиеся внутри элемента id="block".
+
+#block a.zzz:hover — те же ссылки при наведении.
+
+<div id="block">
+	<a href="#" class="zzz">ссылка внутри #block — покрасится</a>
+	<a href="#">без класса — НЕ покрасится</a>
+</div>
+
+<a href="#" class="zzz">вне #block — НЕ покрасится</a>
+
+Что выбирает
+.block a.zzz — ссылки <a> с классом zzz, находящиеся внутри элемента с классом block.
+
+.block a.zzz:hover — те же при наведении.
+
+<div class="block">
+	<a href="#" class="zzz">ссылка внутри .block — покрасится</a>
+</div>
+
+<div id="block">
+	<a href="#" class="zzz">это НЕ .block (id!) — НЕ покрасится</a>
+</div>
+
+<a href="#" class="zzz">вне .block — НЕ покрасится</a>
+
+<!--№35-->
+
+<!--1. Первый <p>-->
+.box p:first-child{
+	color: red;
+}
+
+<!--2. Последний <p>-->
+.box p:last-child{
+	color: green;
+}
+
+<!--3. Первый и последний <p>-->
+.box p:first-child{
+	color: red;
+}
+.box p:last-child{
+	color: green;
+}
+
+<!--№36-->
+
+<!--1. Третий с начала <p>-->
+.box p:ntn-child(3) {
+	color: red;
+}
+
+<!--2. Четный и нечетный-->
+.box p:nth-child(n){
+	color: red;
+}
+.box p:nth-last-child(2n+1){
+	color: green;
+}
+<!--3. Каждый третий-->
+.box p:nth-child(3n){
+	color: red;
+}
+<!--4. Второй с конца <p>-->
+.box p:ntn-last-child(2) {
+	color: red;
+}
+
+<!--№37-->
+<!--1. Единственный потомок родителя-->
+li:only-child{
+	color: red;
+}
+
+<!--№38-->
+<!--1 Стилизуйте пустые теги-->
+li:empty {
+	border: 1px solid blue;
+	list-style-type: circle;
+	width: 100px;
+}
+li{
+	border: 1px solid red;
+	list-style-type: circle;
+	width: 100px;
+}
+
+<!--№39-->
+.block p:first-of-type {
+    color: red;
+    font-weight: bold;
+}
+
+.block p:last-of-type {
+    color: blue;
+    font-weight: bold;
+}
+
+.block p:nth-of-type(3) {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.block h2:nth-last-of-type(2) {
+    color: green;
+}
+
+.single p:only-of-type {
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+<!--№40-->
+li:not(.elem) {
+	color: red;
+}
+
+li:not(:first-child) {
+	color: red;
+}
+
+li:not(:first-child):not(:last-child) {
+	color: red;
+}
