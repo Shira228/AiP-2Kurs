@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vestibulum ante ipsum</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: #b57913;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 16px;
+    }
+
+    .page {
+      width: 844px;
+      max-width: calc(100% - 24px);
+      margin: 0 auto;
+      border: 1px solid #ed9e16;
+    }
+
+    .navigation {
+      display: flex;
+      min-height: 44px;
+      background: #ffa000;
+    }
+
+    .navigation a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 24px;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .navigation a.active,
+    .navigation a:hover {
+      background: #fff;
+      color: #df940e;
+    }
+
+    main {
+      padding: 0 9px 5px;
+    }
+
+    h1,
+    h2 {
+      color: #94620c;
+      text-align: center;
+      font-weight: normal;
+    }
+
+    h1 {
+      margin: 17px 0 14px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    h2 {
+      margin: 19px 0 14px;
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    p {
+      margin: 14px 0 17px;
+      text-align: justify;
+      text-indent: 46px;
+      line-height: 31px;
+    }
+
+    main p:last-child {
+      margin-bottom: 0;
+    }
+
+    main a {
+      color: inherit;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 18px auto 0;
+      padding: 0 12px 20px;
+    }
+
+    footer a {
+      color: #94620c;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .navigation {
+        flex-wrap: wrap;
+      }
+
+      .navigation a {
+        min-height: 44px;
+        padding: 0 14px;
+      }
+
+      p {
+        text-indent: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="#">home</a>
+      <a href="#" class="active" aria-current="page">blog</a>
+      <a href="#">photos</a>
+      <a href="#">about us</a>
+      <a href="#">contacts</a>
+    </nav>
+
+    <main>
+      <h1>Vestibulum ante ipsum</h1>
+
+      <p>
+        Vestibulum ante ipsum primis
+        <a href="#">in faucibus orci luctus</a>
+        et ultrices posuere cubilia Curae; Pellentesque habitant morbi
+        tristique senectus et netus et malesuada fames ac turpis egestas.
+        Proin eu fermentum diam, vitae faucibus ligula. Nam nec risus
+        sed nisi porttitor ullamcorper iaculis ac nulla. Sed condimentum
+        nisi in tincidunt adipiscing. Mauris vehicula mollis consequat.
+        Vivamus non accumsan tortor. Aliquam dictum justo et augue
+        viverra, vel interdum lorem pharetra.
+      </p>
+
+      <p>
+        Nullam id faucibus ante.
+        <a href="#">Proin tristique lorem</a>
+        tristique dolor porttitor, eget adipiscing leo gravida. Proin
+        erat erat, laoreet sit amet tincidunt ac, iaculis nec libero.
+        In placerat odio ac dapibus faucibus. Praesent ut est in ligula
+        facilisis congue eget ac ante. Phasellus at felis vitae est
+        molestie ultricies.
+      </p>
+
+      <h2>Vestibulum ante</h2>
+
+      <p>
+        Vestibulum ante ipsum primis in faucibus orci luctus et
+        ultrices posuere cubilia Curae;
+        <a href="#">Pellentesque</a>
+        habitant morbi tristique senectus et netus et malesuada fames
+        ac turpis egestas. Proin eu fermentum diam, vitae faucibus
+        ligula. Nam nec risus sed nisi porttitor ullamcorper iaculis
+        ac nulla. Sed condimentum nisi in tincidunt adipiscing.
+        Mauris vehicula mollis consequat. Vivamus non accumsan tortor.
+        Aliquam dictum justo et augue viverra, vel interdum lorem
+        pharetra.
+      </p>
+
+      <p>
+        Duis vel dapibus nulla.
+        <a href="#">Sed scelerisque</a>
+        porttitor rhoncus. Nunc eleifend eget nulla sed malesuada.
+        Vestibulum vestibulum ullamcorper lacus, ut ullamcorper tortor
+        convallis quis. Mauris id eleifend nisi. Vivamus at dolor magna.
+        Nulla eleifend odio sit amet nisl semper, id suscipit ligula
+        semper. Nunc leo risus, ullamcorper quis ullamcorper nec,
+        adipiscing et nisl. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas.
+        Donec vestibulum nibh vel magna iaculis, et porttitor massa
+        egestas. Aliquam sodales tincidunt mi ac semper. Nam dignissim
+        lectus elit, nec pharetra ligula suscipit quis.
+      </p>
+    </main>
+  </div>
+
+  <footer aria-label="Footer links">
+    <a href="#">Scelerisque</a>
+    <a href="#">Rhoncus</a>
+    <a href="#">Proin</a>
+    <a href="#">Tristique</a>
+    <a href="#">Faucibus</a>
+  </footer>
+</body>
+</html>
