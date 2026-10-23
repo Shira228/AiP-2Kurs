@@ -1,0 +1,92 @@
+body {
+    font-family: 'Times New Roman';
+}
+
+#elem132 {
+    width: 1000px;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#elem132 .img-left {
+    float: left;
+}
+
+#elem132 .img-right {
+    float: right;
+}
+
+.parent {
+    margin-top: 50px;
+	width: 600px;
+	padding: 20px;
+	margin: 0 auto;
+	border: 1px solid black;
+	text-align: justify;
+}
+
+.child {
+	float: right;
+	width: 100px;
+	height: 70px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	border: 1px solid green;
+}
+		
+
+.parent2 {
+	width: 800px;
+	padding: 20px;
+	margin: 0 auto;
+	border: 1px solid black;
+	text-align: justify;
+}
+
+.child2 {
+	float: right;
+	width: 130px;
+	height: 70px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+	border: 1px solid green;
+}
+		
+#elem135 {
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#elem135 .block {
+    float: left;
+    width: 130px;
+    height: 60px;
+    border: 1px solid green;
+    box-sizing: border-box;
+    margin-right: 15px;
+    padding: 5px 10px;
+}
+
+#elem136 {
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#elem136 .block {
+    float: right;
+    width: 130px;
+    height: 60px;
+    border: 1px solid green;
+    box-sizing: border-box;
+    margin-right: 15px;
+    padding: 5px 10px;
+}
