@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+        <script> //105
+            let test = 15;
+            let test2 = 5;
+            if (test > 10) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+
+            if (test2 < 10) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+
+            if (test >= 10) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+
+            if (test2 <= 10) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+        </script>
+
+        <script> //106
+            let test3 = 10;
+            if (test3 == 10) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+        </script>
+
+        <script> //107
+            let test4 = 10;
+            if (test4 != 10) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+        </script>
+
+        <script> //108
+            let test5 = 50;
+            let test6 = 5;
+            if (test5 > test6) {
+                console.log('test 5 >');
+            } else {
+                console.log('test 6 >');
+            }
+
+            if (test5 == test6) {
+                console.log('ravni');
+            } else {
+                console.log('ne ravni');
+            }
+        </script>
+
+        <script> //109
+            let text1 = 'abc'
+            let text2 = 'cba'
+            if (text1 == text2) {
+                console.log('ravno');
+            } else {
+                console.log('ne ravno');
+            }
+        </script>
+
+        <script> //110
+            let test7 = '123';
+            let test8 = 123;
+            if (test7 == test8) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+        </script>
+
+        <script> //113
+            let num = 10;
+            let num1 = 2;
+            if (num > 0 && num < 5) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+
+            if (num >= 10 && num <= 20) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+
+            if (num <= 1 && num1 >= 3) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+        </script>
+        
+        <script> //117
+            if (!(num1 >= 0 || num2 <= 10)) {
+	        console.log('+++');
+            } else {
+	        console.log('---');
+            }
+        </script>
+
+        <script> //118
+            let test9 = true;
+            if (test9 === true) {
+	        console.log('+++');
+            } else {
+	        console.log('---');
+            }
+
+            if (test9 === false) {
+	        console.log('+++');
+            } else {
+	        console.log('---');
+            }
+        </script>
+
+        <script> //120
+            if (test9) {
+	        console.log('+++');
+            } else {
+	        console.log('---');
+            }
+        </script>
+
+        <script> //121
+            if (!test9) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }   
+        </script>
+        <script>
+            if (!test9) {
+            console.log('+++');
+            } else {
+            console.log('---');
+            }
+        </script>
+        <script>
+            if (test9) {
+            console.log('+++');
+            } else {
+            console.log('---');
+            }
+        </script>
+
+        <script> //123   
+            let test10 = true;
+            if (test9 && test10) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+        </script>
+        <script> 
+            if (test9 && !test10) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+        </script>
+        <script> 
+            if (!test9 && !test10) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+        </script>
+        <script>
+            if (test9 && test10) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+        </script>
+        <script>
+            let test11 = true;
+            if (test9 && test10 && test11) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            } 
+        </script>
+        <script>
+            if (test9 || test10 && test11) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+        </script>
+        <script>
+            if (test9 || !test10 && !test11) {
+                console.log('+++');
+            } else {
+                console.log('---');
+            }
+        </script>
+
+        <script> //124
+            let test12 = 10;
+            if (test12 === 10) {
+                console.log('yes');
+            }
+        </script>
+
+         <script> //125
+            var test13 = 1;
+            if (test13 > 0) console.log('+++');
+            else console.log('---');
+        </script>
+        <script>
+            if (test13 > 0) console.log('+++');
+        </script>
+
+        <script> //127
+            var test14 = 15;
+            if (test14 >= 1 && test14 <= 10) {
+                console.log('первая декада');
+            } else if (test14 >= 11 && test14 <= 20) {
+                console.log('вторая декада');
+            } else if (test14 >= 21 && test14 <= 31) {
+                console.log('третья декада');
+            }
+        </script>
+        <script>
+            if (test14 < 1 || test14 > 31) {
+                console.log('ошибка: число должно быть от 1 до 31');
+            } else if (test14 <= 10) {
+                console.log('первая декада');
+            } else if (test14 <= 20) {
+                console.log('вторая декада');
+            } else {
+                console.log('третья декада');
+            }
+        </script>
+
+        <script> //128
+            var test15 = 47;
+
+            if (test15 >= 10 && test15 <= 99) {
+                var test15TENS = (test15 - test15 % 10) / 10;
+                var test15ONES = test15 % 10;
+                var test15SUM = test15TENS + test15ONES;
+                if (test15SUM <= 9) {
+                    console.log('сумма цифр однозначна');
+                } else {
+                    console.log('сумма цифр двузначна');
+                }
+            }
+        </script>
+
+        <script> //129
+            var test16 = 'ru';
+            switch (test16) {
+                case 'ru':
+                    console.log('rus');
+                    break;
+                case 'en':
+                    console.log('eng');
+                    break;
+                case 'de':
+                    console.log('deu');
+                    break;
+                default:
+                    console.log('language not supported');
+            }
+        </script>
+
+        <script> //131
+            var test17 = 1;
+            var test17RES = test17 >= 0 ? '1' : '2';
+            console.log(test17RES);
+        </script>
+
+        <script> //132
+            var test18_1 = 2 * (3 - 1);
+            var test18_2 = 6 - 2;
+            console.log(test18_1 == test18_2);
+        </script>
+        <script>
+            var test19_1 = 5 * (7 - 4);
+            var test19_2 = 1 + 2 + 7;
+
+            console.log(test19_1 > test19_2);
+        </script>
+        <script>
+            var test20_1 = 2 ** 4;
+            var test20_2 = 4 ** 2;
+
+            console.log(test20_1 != test20_2);
+        </script>
+
+        <script> //133
+            var test21 = confirm('Вам уже есть 18 лет?');
+            if (test21) {
+                console.log('Добро пожаловать! Здесь контент для взрослых.');
+            } else {
+                console.log('Доступ запрещён: вы не достигли 18 лет.');
+            }
+        </script>
+
+        <script> //134
+            var test22AGE = 17;
+            var test22ADULT;
+            if (test22AGE >= 18) {
+                test22ADULT = true;
+            } else {
+                test22ADULT = false;
+            }
+            console.log(test22ADULT);
+        </script>
+
+        <script> //135
+            if (test22AGE >= 18) {
+                test22ADULT = true;
+            } else {
+                test22ADULT = false;
+            }
+            console.log(test22ADULT);
+        </script>
+        <script>
+            if (test22AGE >= 18) {
+                test22ADULT = true;
+            } else {
+                test22ADULT = false;
+            }
+            console.log(test22ADULT);
+        </script>
+        <script>
+            var test23;
+            if (test22AGE >= 18) {
+                if (test22AGE <= 23) {
+                    test23 = 'от 18 до 23';
+                } else {
+                    test23 = 'больше 23';
+                }
+            } else {
+                test23 = 'меньше 18';
+            }
+            console.log(test23);
+        </script>
+        <script>
+            var test24 = 19;
+            if (test24 >= 18) {
+                if (test24 <= 23) {
+                    test23 = 'от 18 до 23';
+                } else {
+                    test23 = 'больше 23';
+                }
+            } else {
+                test23 = 'меньше 18';
+            }
+            console.log(test23);
+        </script>
+
+        <script> //136
+            var test24 = 25;
+            if (test24 >= 0 && test24 <= 19) {
+                console.log('1 треть');
+            }
+            if (test24 >= 20 && test24 <= 39) {
+                console.log('2 треть');
+            }
+            if (test24 >= 40 && test24 <= 59) {
+                console.log('3 треть');
+            }
+        </script>
+
+        <script> //137
+            var test25 = [10, 20, 30];
+            if (tets25.length === 3) {
+                console.log(test25[0] + test25[1] + test25[2]);
+            }
+        </script>
+
+        <script> //138
+            var test26 = 'apple';
+            if (test26[0] === 'a') {
+                console.log('начинается на a');
+            }
+        </script>
+        <script>
+            var test27 = 'box';
+            if (test27[test27.length - 1] === 'x') {
+                console.log('заканчивается на x');
+            }
+        </script>
+        <script>
+            var test28 = 'banana';
+
+            if (test28[0] === 'a' || test28[0] === 'b') {
+                console.log('начинается на a или b');
+            }
+        </script>
+
+        <script> //139
+            var test29 = 120;
+            if (test29 % 10 === 0) {
+                console.log('последняя цифра — ноль');
+            }
+        </script>
+        <script>
+            var test30 = 47;
+            if (test30 % 10 === 0 || test30 % 10 === 2 || test30 % 10 === 4 || test30 % 10 === 6 || test30 % 10 === 8) {
+                console.log('чётное');
+            } else {
+                console.log('нечётное');
+            }
+        </script>
+
+        <script> //140
+            var test31 = 10;
+            if (test31 % 2 === 0) {
+                console.log('чётное');
+            } else {
+                console.log('нечётное');
+            }
+        </script>
+        <script>
+            var test32 = 15;
+            if (test32 % 3 === 0) {
+                console.log('делится на 3');
+            } else {
+                console.log('не делится на 3');
+            }
+        </script>
+    
+        <script> //141
+            var test33 = 5;
+            if (test33 === 12 || test33 === 1 || test33 === 2) {
+                console.log('зима');
+            } else if (test33 >= 3 && test33 <= 5) {
+                console.log('весна');
+            } else if (test33 >= 6 && test33 <= 8) {
+                console.log('лето');
+            } else if (test33 >= 9 && test33 <= 11) {
+                console.log('осень');
+            } else {
+                console.log('неверный месяц');
+            }
+        </script>
+        <script>
+            var test34 = 'abcde';
+            if (test34[0] === 'a') {
+                console.log('первый символ — a');
+            } else {
+                console.log('первый символ — не a');
+            }
+        </script>
+        <script>
+            var test35_1 = 12345;
+            var test35_2 = String(test35_1)[0];
+            if (test35_2 === '1' || test35_2 === '2' || test35_2 === '3') {
+                console.log('первая цифра — 1, 2 или 3');
+            } else {
+                console.log('первая цифра — другая');
+            }
+        </script>
+        <script>
+            var test36_1 = 123;
+            var test36_2 = String(test36_1);
+            var test36_3 = Number(test36_2[0]) + Number(test36_2[1]) + Number(test36_2[2]);
+            console.log(test36_3);
+        </script>
+        <script>
+            var test37_1 = '123033';
+            var test37_2 = Number(test37_1[0]) + Number(test37_1[1]) + Number(test37_1[2]);
+            var test37_3 = Number(test37_1[3]) + Number(test37_1[4]) + Number(test37_1[5]);
+            if (test37_2 === test37_3) {
+                console.log('суммы равны');
+            } else {
+                console.log('суммы не равны');
+            }
+        </script>
+    </head>
+</html>    
